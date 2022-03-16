@@ -9,7 +9,7 @@ class Post(models.Model):
     URL=models.URLField()
     Description=models.CharField(max_length=100)
     categories=models.CharField(max_length=50)
-    technologies= models.CharField()
+    technologies= models.CharField(max_length=100)
     author =models.ForeignKey(User, on_delete=models.CASCADE)
 
 
