@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Post(models.Model):
     sitename= models.TextField()
-    image= models.ImageField(upload_to='')
+    image= models.ImageField(upload_to='images')
     URL=models.URLField()
     Description=models.CharField(max_length=100)
     categories=models.CharField(max_length=50)
