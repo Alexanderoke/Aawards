@@ -15,8 +15,6 @@ def home(request):
   return render(request, 'appward/home.html', context)
 
 
-  
-
 # if request.method =='POST':
 #     form = UserRegisterForm(request.POST)
 #     if form.is_valid():

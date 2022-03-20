@@ -25,3 +25,6 @@ def login(request):
 @login_required
 def profile(request):
   return render(request, 'user/profile.html')  
+
+def upload(request):
+  return render(request, 'appward/upload.html')
