@@ -30,5 +30,10 @@ def profile(request):
 
 def upload(request):
   form= PostForm()
+  if request.method == 'POST':
+    form= PostForm(request.POST)
+    if form.is_valid():
+      form.save()
+      return redirect('/')
   context={'form':form}
   return render(request, 'user/upload.html', context)
