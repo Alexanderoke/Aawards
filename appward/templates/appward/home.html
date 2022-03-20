@@ -1,12 +1,49 @@
 {% extends "appward/base.html" %}
 
 {%block content  %}
-<h1>home</h1>
+
+
+<div class="container">
+  
+
+  <div class="col-md-9">
+
+    <div class="row">
+    
+
+      {% for post in posts %}
+      <div class="col-md-3">
+        <div class="card my-2" >
+          <img src="{{Post.image.url}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p><u>Creator</u></p>
+            <h5 class="card-title">{{post.author}}</h5>
+
+            <p><u>technologies used</u></p>
+            <h5 class="card-title">{{ post.technologies }}</h5>
+            
+            
+            <a href="{{ post.URL }}" target="_blank" class="btn btn-primary">Visit Site</a>
+          </div>            
+        </div>
+      </div>
+      {% empty %}
+      <h3>Hakuna Picha Hapa....</h3>
+      {% endfor %}
+                 
+  </div>
+</div>
+</div>
+
+  </div>
+
+<!-- <h1>home</h1>
 {% for post in posts %}
 <img src="{{post.image.url }}" alt="">
+
 {{ post.author }}
 {{ post.sitename }}
 {{ post.Description }}
 {{ post.technologies }}
-{% endfor %}
+{% endfor %} -->
 {% endblock content %}
