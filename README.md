@@ -17,4 +17,4 @@ html and Bootstrap
 Feel free to reach out to me via git hub
 ### License
 *This is under the [MIT](LICENSE) license
-Copyright (c) {year} **{List of contributors or company name}**
+Copyright (c) {2022} **{Alexander Oke}**
