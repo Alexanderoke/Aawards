@@ -1,6 +1,8 @@
 from django.shortcuts import render,redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+
+from appward.form import PostForm
 from .forms import UserRegisterForm
 
 # Create your views here.
@@ -27,4 +29,6 @@ def profile(request):
   return render(request, 'user/profile.html')  
 
 def upload(request):
-  return render(request, 'user/upload.html')
+  form= PostForm()
+  context={'form':form}
+  return render(request, 'user/upload.html', context)
