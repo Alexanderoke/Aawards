@@ -8,6 +8,7 @@ This web app allows users to upload projects and get their projects reviewed by 
 * on the terminal type pythone manage.py runserver
 you will need python 3. and above to run the app
 ## Live link
+https://awwwardsoke.herokuapp.com/
 ## Known Bugs
 The web app runs well though the project upload does not work as expected.
 ## Technologies Used
